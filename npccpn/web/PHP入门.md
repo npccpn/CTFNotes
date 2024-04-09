@@ -233,11 +233,11 @@ echo和print
 
 strpos(string, find, start)
 
-+ string必需：被搜索的字符串
++ `string`必需：被搜索的字符串
 
-+ find必需：要查找的字符
++ `find`必需：要查找的字符
 
-+ start可选：开始以搜索的位置
++ `start`可选：开始以搜索的位置
 
 + 返回：字符串在另一字符串中第一次出现的位置
 
@@ -247,13 +247,13 @@ strpos(string, find, start)
 
 mb_substr(str,start,length,encoding) 
 
-+ str必需：被提取的字符串
++ `str`必需：被提取的字符串
 
-+ start必需：从何处开始提取
++ `start`必需：从何处开始提取
 
-+ length可选：返回的字符串的长度
++ `length`可选：返回的字符串的长度
 
-+ encoding可选：字符编码
++ `encoding`可选：字符编码
 
 + 返回：字符串的一部分
 
@@ -261,13 +261,21 @@ mb_substr(str,start,length,encoding)
 
 in_array(search,array,type)
 
-+ search必需：要在数组搜索的值
++ `search`必需：要在数组搜索的值
 
-+ array必需：要搜索的数组
++ `array`必需：要搜索的数组
 
-+ type可选：如果设置该参数为 true，则检查搜索的数据与数组的值的类型是否相同
++ `type`可选：如果设置该参数为 true，则检查搜索的数据与数组的值的类型是否相同
 
 + 返回：指定数组中是否存在指定的值
+
+### preg_match
+
+preg_match(pattern, subject, matches)
+
+* `pattern`是正则表达式模式
+* `subject`是要匹配的字符串
+* `matches`是可选的输出参数，用来存储匹配的结果
 
 ## 魔术常量
 
